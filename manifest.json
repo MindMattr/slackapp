@@ -1,0 +1,71 @@
+{
+    "display_information": {
+        "name": "MindMattr"
+    },
+    "features": {
+        "app_home": {
+            "home_tab_enabled": true,
+            "messages_tab_enabled": true,
+            "messages_tab_read_only_enabled": true
+        },
+        "bot_user": {
+            "display_name": "MindMattr",
+            "always_online": false
+        },
+        "slash_commands": [
+            {
+                "command": "/listmanagers",
+                "url": "PLEASE-UPDATE-ME-WITH-HOST/slack/events",
+                "description": "List all managers in a workspace",
+                "should_escape": false
+            },
+            {
+                "command": "/removemanager",
+                "url": "PLEASE-UPDATE-ME-WITH-HOST/slack/events",
+                "description": "Remove a manager from a workspace",
+                "usage_hint": "@user",
+                "should_escape": true
+            },
+            {
+                "command": "/setmanager",
+                "url": "PLEASE-UPDATE-ME-WITH-HOST/slack/events",
+                "description": "Set a manager for a workspace",
+                "usage_hint": "@user",
+                "should_escape": true
+            }
+        ]
+    },
+    "oauth_config": {
+        "redirect_urls": [
+            "PLEASE-UPDATE-ME-WITH-HOST/slack/oauth_redirect"
+        ],
+        "scopes": {
+            "bot": [
+                "channels:join",
+                "channels:read",
+                "chat:write",
+                "chat:write.public",
+                "commands",
+                "im:history",
+                "im:read",
+                "im:write",
+                "users:read"
+            ]
+        }
+    },
+    "settings": {
+        "event_subscriptions": {
+            "request_url": "PLEASE-UPDATE-ME-WITH-HOST/slack/events",
+            "bot_events": [
+                "app_home_opened"
+            ]
+        },
+        "interactivity": {
+            "is_enabled": true,
+            "request_url": "PLEASE-UPDATE-ME-WITH-HOST/slack/events"
+        },
+        "org_deploy_enabled": false,
+        "socket_mode_enabled": false,
+        "token_rotation_enabled": false
+    }
+}
