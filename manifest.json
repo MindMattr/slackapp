@@ -15,20 +15,20 @@
         "slash_commands": [
             {
                 "command": "/listmanagers",
-                "url": "PLEASE-UPDATE-ME-WITH-HOST/slack/events",
+                "url": "https://slackbot.herokuapp.com/slack/events",
                 "description": "List all managers in a workspace",
                 "should_escape": false
             },
             {
                 "command": "/removemanager",
-                "url": "PLEASE-UPDATE-ME-WITH-HOST/slack/events",
+                "url": "https://slackbot.herokuapp.com/slack/events",
                 "description": "Remove a manager from a workspace",
                 "usage_hint": "@user",
                 "should_escape": true
             },
             {
                 "command": "/setmanager",
-                "url": "PLEASE-UPDATE-ME-WITH-HOST/slack/events",
+                "url": "https://slackbot.herokuapp.com/slack/events",
                 "description": "Set a manager for a workspace",
                 "usage_hint": "@user",
                 "should_escape": true
@@ -37,7 +37,7 @@
     },
     "oauth_config": {
         "redirect_urls": [
-            "PLEASE-UPDATE-ME-WITH-HOST/slack/oauth_redirect"
+            "https://slackbot.herokuapp.com/slack/oauth_redirect"
         ],
         "scopes": {
             "bot": [
@@ -55,14 +55,14 @@
     },
     "settings": {
         "event_subscriptions": {
-            "request_url": "PLEASE-UPDATE-ME-WITH-HOST/slack/events",
+            "request_url": "https://slackbot.herokuapp.com/slack/events",
             "bot_events": [
                 "app_home_opened"
             ]
         },
         "interactivity": {
             "is_enabled": true,
-            "request_url": "PLEASE-UPDATE-ME-WITH-HOST/slack/events"
+            "request_url": "https://slackbot.herokuapp.com/slack/events"
         },
         "org_deploy_enabled": false,
         "socket_mode_enabled": false,
